@@ -2,6 +2,9 @@
 bin/
 obj/
 
+# Publish output
+publish/
+
 # Network map exports (runtime output, not source)
 NetworkMap_*/
 
