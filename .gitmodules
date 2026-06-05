@@ -1,0 +1,3 @@
+[submodule "stratix-ssh"]
+	path = stratix-ssh
+	url = https://github.com/Rszalay/stratix-ssh.git

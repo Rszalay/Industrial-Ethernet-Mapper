@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\stratix-ssh\stratix-ssh\stratix-ssh.csproj" />
+    <ProjectReference Include="..\stratix-ssh\stratix-ssh\stratix-ssh.csproj" />
   </ItemGroup>
 
 </Project>

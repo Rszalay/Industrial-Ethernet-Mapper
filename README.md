@@ -81,17 +81,18 @@ PLC, VFD (AC Drive), VFD (DC Drive), HMI, Encoder, Safety I/O, Discrete I/O, Mot
 
 ## Building from Source
 
-Requires [.NET 10 SDK](https://dotnet.microsoft.com/download) and the [stratix-ssh](https://github.com/Rszalay/stratix-ssh) library checked out at the same directory level:
+Requires [.NET 10 SDK](https://dotnet.microsoft.com/download). The [stratix-ssh](https://github.com/Rszalay/stratix-ssh) library is included as a git submodule — use `--recurse-submodules` when cloning so it is fetched automatically:
 
 ```
-repos\
-  Industrial-Ethernet-Mapper\
-  stratix-ssh\
-```
-
-```
+git clone --recurse-submodules https://github.com/Rszalay/Industrial-Ethernet-Mapper.git
 cd Industrial-Ethernet-Mapper\Industrial-Ethernet-Mapper
 dotnet build
+```
+
+If you already cloned without the flag, run:
+
+```
+git submodule update --init
 ```
 
 To publish a new release build:
